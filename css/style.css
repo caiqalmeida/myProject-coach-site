@@ -1,0 +1,374 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif; 
+  }
+
+/* NAV */
+
+  .container-nav {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .nav-logo {
+    margin-left: 100px;
+    flex:1;
+  }
+
+  .nav-logo-img {
+    width: 280px;
+  }
+
+  .toggle {
+    text-align: center;
+    display: none;
+  }
+
+  .nav-menu {
+    flex:1;
+  }
+
+  .label, .input {
+    display: none;
+  }
+
+  .nav-menu-items {
+    list-style: none;
+    flex: 1;
+  }
+
+  .nav-menu-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+    line-height: 74px;
+  }
+
+  .nav-menu-items a {
+    font-size: 16px;
+    color: #012D4D;
+    text-decoration: none;
+  }
+
+  .nav-menu-items a:hover {
+    border-bottom: solid  #F4C33F 2px;
+  }
+
+
+  /* HEADER - INTRO */
+
+  .header-intro {
+  background-image: linear-gradient(to top, blue);
+  background-image: url(../images/background3-2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column; 
+  align-items: center; 
+  justify-content: center;
+  }
+
+  .header-intro-p {
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+  }
+
+  .header-intro-p-emph {
+    text-transform: uppercase;
+    color: #F4C33F;
+    font-size: 60px;
+  }
+
+  /* SECTION - PROFILE */
+
+  .container-section-profile {
+    padding-top: 50px;
+  }
+
+  .section-profile {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .section-profile-img {
+    height: 550px;
+  }
+
+  .section-profile-img img {
+    width: 472px;
+  }
+
+  .section-profile-text {
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .section-profile-text h1 {
+    font-size: 50px;
+    text-align: left;
+    border-bottom: solid  #F4C33F;
+    width: 465px; 
+  }
+
+  .section-profile-text p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 26px;
+  }
+
+  /* SECTION - SERVICES */
+
+  .section-services {
+    background-color: #F4C33F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-services-title h2 {
+    font-size: 50px;
+    margin-bottom: 100px;
+    border-bottom: solid #012D4D;
+  }
+
+  .section-services-services {
+    display: flex;
+    flex-direction: row;;
+    align-items: space-between;
+    justify-content: space-around;
+  }
+
+  .section-services-services-card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 30%;
+  }
+
+  .section-services-services-card h3,p {
+    text-align: center;
+  }
+
+  .section-services-services-card h3 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .section-services-services-card p {
+    font-size: 16px;    
+    line-height: 22px;
+  }
+
+  .section-services-services-card-img img {
+    height: 111.72px;
+  }
+
+
+
+/* SECTION - FOOTER */
+
+    .section-footer {
+      background-color: #012D4D;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    .section-footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section-footer ul li {
+      display: inline-block;
+    }
+
+    .section-footer-img {
+      width: 35px;
+      height: 35px;
+      filter: invert(100%);
+      margin-left: 10px;
+    }
+
+    .section-footer p {
+      color: white;
+    }
+
+    .caique-link {
+      color: white;
+      border-bottom: solid  #F4C33F 1px;
+      text-decoration: none;
+    }
+
+    .caique-link:hover {
+      background-color: #F4C33F;
+    }
+
+    @media (max-width: 720px) {
+
+
+      /* HEADER / NAV  */
+      body {
+        width: 100%;
+      }
+
+      .container-nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .nav-logo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+      }
+
+      .nav-logo-img {
+        height: 75%;
+      }
+
+      .toggle {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-right: 20px;
+      }
+
+      .nav-menu-items_close {
+        display: none;
+      }
+
+      .nav-menu-items_open{
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header-intro p {
+        text-align: center;
+      }
+
+      .header-intro-p-emph {
+        font-size: 46px;
+      }
+
+      /* SECTION: PROFILE */
+      
+      .section-profile {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .section-profile-img {
+        height: 100%;
+        order:1;
+      }
+    
+      .section-profile-img img {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .section-profile-text {
+        width: 100%;
+        text-align: center;
+        flex:1;
+      }
+    
+      .section-profile-text h1 {
+        font-size: 36px;
+        text-align: center;
+        margin: auto;
+        text-decoration: underline;
+        text-decoration-color: #F4C33F;
+        border: 0;
+        width: 100%;
+      }
+    
+      .section-profile-text p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 26px;
+        padding: 20px;
+      }
+
+      /* SECTION - SERVICES */
+
+      .section-services-services {
+        flex-direction: column;
+      }
+
+      .section-services-title {
+        width: 100%;
+      }
+
+      .section-services-title h2 {
+        font-size: 36px;
+        text-align: center;
+        margin: 0 auto 50px auto;
+        text-decoration: underline;
+        text-decoration-color: #012D4D;
+        border: 0;
+    }
+
+      .section-services-services-card {
+      width: 100%;
+      }
+
+      
+    
+      .section-services-services-card-text p {
+        font-size: 14px;
+      }
+    }
